@@ -1,0 +1,846 @@
+[
+    {
+        "filePath": "/Users/nicolasharraudeau/sonarsource/sonarjs-eslint-reports/jscode/src/index.js",
+        "messages": [
+            {
+                "ruleId": "vars-on-top",
+                "severity": 2,
+                "message": "All 'var' declarations must be at the top of the function scope.",
+                "line": 3,
+                "column": 6,
+                "nodeType": "VariableDeclaration",
+                "endLine": 3,
+                "endColumn": 15
+            },
+            {
+                "ruleId": "no-var",
+                "severity": 2,
+                "message": "Unexpected var, use let or const instead.",
+                "line": 3,
+                "column": 6,
+                "nodeType": "VariableDeclaration",
+                "endLine": 3,
+                "endColumn": 15
+            },
+            {
+                "ruleId": "id-length",
+                "severity": 2,
+                "message": "Identifier name 'i' is too short (< 2).",
+                "line": 3,
+                "column": 10,
+                "nodeType": "Identifier",
+                "endLine": 3,
+                "endColumn": 11
+            },
+            {
+                "ruleId": "block-scoped-var",
+                "severity": 2,
+                "message": "'i' used outside of binding context.",
+                "line": 3,
+                "column": 10,
+                "nodeType": "Identifier",
+                "messageId": "outOfScope",
+                "endLine": 3,
+                "endColumn": 11
+            },
+            {
+                "ruleId": "block-scoped-var",
+                "severity": 2,
+                "message": "'i' used outside of binding context.",
+                "line": 3,
+                "column": 17,
+                "nodeType": "Identifier",
+                "messageId": "outOfScope",
+                "endLine": 3,
+                "endColumn": 18
+            },
+            {
+                "ruleId": "no-magic-numbers",
+                "severity": 2,
+                "message": "No magic number: 10.",
+                "line": 3,
+                "column": 21,
+                "nodeType": "Literal",
+                "endLine": 3,
+                "endColumn": 23
+            },
+            {
+                "ruleId": "no-plusplus",
+                "severity": 2,
+                "message": "Unary operator '--' used.",
+                "line": 3,
+                "column": 25,
+                "nodeType": "UpdateExpression",
+                "endLine": 3,
+                "endColumn": 28
+            },
+            {
+                "ruleId": "block-scoped-var",
+                "severity": 2,
+                "message": "'i' used outside of binding context.",
+                "line": 3,
+                "column": 25,
+                "nodeType": "Identifier",
+                "messageId": "outOfScope",
+                "endLine": 3,
+                "endColumn": 26
+            },
+            {
+                "ruleId": "no-var",
+                "severity": 2,
+                "message": "Unexpected var, use let or const instead.",
+                "line": 6,
+                "column": 6,
+                "nodeType": "VariableDeclaration",
+                "endLine": 6,
+                "endColumn": 16
+            },
+            {
+                "ruleId": "one-var",
+                "severity": 2,
+                "message": "Combine this with the previous 'var' statement.",
+                "line": 6,
+                "column": 6,
+                "nodeType": "VariableDeclaration",
+                "endLine": 6,
+                "endColumn": 16
+            },
+            {
+                "ruleId": "vars-on-top",
+                "severity": 2,
+                "message": "All 'var' declarations must be at the top of the function scope.",
+                "line": 6,
+                "column": 6,
+                "nodeType": "VariableDeclaration",
+                "endLine": 6,
+                "endColumn": 16
+            },
+            {
+                "ruleId": "block-scoped-var",
+                "severity": 2,
+                "message": "'i' used outside of binding context.",
+                "line": 6,
+                "column": 10,
+                "nodeType": "Identifier",
+                "messageId": "outOfScope",
+                "endLine": 6,
+                "endColumn": 11
+            },
+            {
+                "ruleId": "id-length",
+                "severity": 2,
+                "message": "Identifier name 'i' is too short (< 2).",
+                "line": 6,
+                "column": 10,
+                "nodeType": "Identifier",
+                "endLine": 6,
+                "endColumn": 11
+            },
+            {
+                "ruleId": "block-scoped-var",
+                "severity": 2,
+                "message": "'i' used outside of binding context.",
+                "line": 6,
+                "column": 18,
+                "nodeType": "Identifier",
+                "messageId": "outOfScope",
+                "endLine": 6,
+                "endColumn": 19
+            },
+            {
+                "ruleId": "no-magic-numbers",
+                "severity": 2,
+                "message": "No magic number: 0.",
+                "line": 6,
+                "column": 23,
+                "nodeType": "Literal",
+                "endLine": 6,
+                "endColumn": 24
+            },
+            {
+                "ruleId": "block-scoped-var",
+                "severity": 2,
+                "message": "'i' used outside of binding context.",
+                "line": 6,
+                "column": 26,
+                "nodeType": "Identifier",
+                "messageId": "outOfScope",
+                "endLine": 6,
+                "endColumn": 27
+            },
+            {
+                "ruleId": "no-plusplus",
+                "severity": 2,
+                "message": "Unary operator '++' used.",
+                "line": 6,
+                "column": 26,
+                "nodeType": "UpdateExpression",
+                "endLine": 6,
+                "endColumn": 29
+            },
+            {
+                "ruleId": "newline-after-var",
+                "severity": 2,
+                "message": "Expected blank line after variable declarations.",
+                "line": 9,
+                "column": 1,
+                "nodeType": "VariableDeclaration",
+                "endLine": 9,
+                "endColumn": 16,
+                "fix": {
+                    "range": [
+                        106,
+                        106
+                    ],
+                    "text": "\n"
+                }
+            },
+            {
+                "ruleId": "curly",
+                "severity": 2,
+                "message": "Expected { after 'if' condition.",
+                "line": 10,
+                "column": 1,
+                "nodeType": "IfStatement",
+                "messageId": "missingCurlyAfterCondition",
+                "fix": {
+                    "range": [
+                        115,
+                        121
+                    ],
+                    "text": "{foo++;}"
+                }
+            },
+            {
+                "ruleId": "no-plusplus",
+                "severity": 2,
+                "message": "Unary operator '++' used.",
+                "line": 10,
+                "column": 10,
+                "nodeType": "UpdateExpression",
+                "endLine": 10,
+                "endColumn": 15
+            }
+        ],
+        "errorCount": 20,
+        "warningCount": 0,
+        "fixableErrorCount": 2,
+        "fixableWarningCount": 0,
+        "source": "console.log('test')\n\nfor (var i = 0; i < 10; i--) {\n}\n\nfor (var i = 10; i >= 0; i++) {\n}\n\nconst foo = 42;\nif (foo) foo++;"
+    },
+    {
+        "filePath": "/Users/nicolasharraudeau/sonarsource/sonarjs-eslint-reports/jscode/src/MyControler.js",
+        "messages": [
+            {
+                "ruleId": "angular/file-name",
+                "severity": 2,
+                "message": "Filename must be \"MyController.js\"",
+                "line": 1,
+                "column": 1,
+                "nodeType": "CallExpression",
+                "endLine": 12,
+                "endColumn": 4
+            },
+            {
+                "ruleId": "angular/file-name",
+                "severity": 2,
+                "message": "Filename must be \"scopeExample.js\"",
+                "line": 1,
+                "column": 1,
+                "nodeType": "CallExpression",
+                "endLine": 1,
+                "endColumn": 35
+            },
+            {
+                "ruleId": "dot-location",
+                "severity": 2,
+                "message": "Expected dot to be on same line as object.",
+                "line": 2,
+                "column": 1,
+                "nodeType": "MemberExpression",
+                "messageId": "expectedDotAfterObject",
+                "fix": {
+                    "range": [
+                        34,
+                        36
+                    ],
+                    "text": ".\n"
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 4 spaces but found 0.",
+                "line": 2,
+                "column": 1,
+                "nodeType": "Punctuator",
+                "endLine": 2,
+                "endColumn": 1,
+                "fix": {
+                    "range": [
+                        35,
+                        35
+                    ],
+                    "text": "    "
+                }
+            },
+            {
+                "ruleId": "array-bracket-newline",
+                "severity": 2,
+                "message": "A linebreak is required after '['.",
+                "line": 2,
+                "column": 29,
+                "nodeType": "ArrayExpression",
+                "messageId": "missingOpeningLinebreak",
+                "endLine": 2,
+                "endColumn": 30,
+                "fix": {
+                    "range": [
+                        64,
+                        64
+                    ],
+                    "text": "\n"
+                }
+            },
+            {
+                "ruleId": "array-element-newline",
+                "severity": 2,
+                "message": "There should be a linebreak after this element.",
+                "line": 2,
+                "column": 39,
+                "nodeType": null,
+                "messageId": "missingLineBreak",
+                "endLine": 2,
+                "endColumn": 40,
+                "fix": {
+                    "range": [
+                        73,
+                        74
+                    ],
+                    "text": "\n"
+                }
+            },
+            {
+                "ruleId": "func-names",
+                "severity": 2,
+                "message": "Unexpected unnamed function.",
+                "line": 2,
+                "column": 40,
+                "nodeType": "FunctionExpression",
+                "endLine": 12,
+                "endColumn": 2
+            },
+            {
+                "ruleId": "space-before-function-paren",
+                "severity": 2,
+                "message": "Missing space before function parentheses.",
+                "line": 2,
+                "column": 48,
+                "nodeType": "FunctionExpression",
+                "fix": {
+                    "range": [
+                        82,
+                        82
+                    ],
+                    "text": " "
+                }
+            },
+            {
+                "ruleId": "padded-blocks",
+                "severity": 2,
+                "message": "Block must be padded by blank lines.",
+                "line": 2,
+                "column": 57,
+                "nodeType": "BlockStatement",
+                "fix": {
+                    "range": [
+                        92,
+                        92
+                    ],
+                    "text": "\n"
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 8 spaces but found 2.",
+                "line": 3,
+                "column": 1,
+                "nodeType": "Identifier",
+                "endLine": 3,
+                "endColumn": 3,
+                "fix": {
+                    "range": [
+                        93,
+                        95
+                    ],
+                    "text": "        "
+                }
+            },
+            {
+                "ruleId": "angular/controller-as",
+                "severity": 2,
+                "message": "You should not set properties on $scope in controllers. Use controllerAs syntax and add data to \"this\"",
+                "line": 3,
+                "column": 3,
+                "nodeType": "ExpressionStatement",
+                "endLine": 3,
+                "endColumn": 29
+            },
+            {
+                "ruleId": "indent-legacy",
+                "severity": 2,
+                "message": "Expected indentation of 4 spaces but found 2.",
+                "line": 3,
+                "column": 3,
+                "nodeType": "ExpressionStatement",
+                "endLine": 3,
+                "endColumn": 29,
+                "fix": {
+                    "range": [
+                        93,
+                        95
+                    ],
+                    "text": "    "
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 8 spaces but found 2.",
+                "line": 5,
+                "column": 1,
+                "nodeType": "Identifier",
+                "endLine": 5,
+                "endColumn": 3,
+                "fix": {
+                    "range": [
+                        123,
+                        125
+                    ],
+                    "text": "        "
+                }
+            },
+            {
+                "ruleId": "indent-legacy",
+                "severity": 2,
+                "message": "Expected indentation of 4 spaces but found 2.",
+                "line": 5,
+                "column": 3,
+                "nodeType": "ExpressionStatement",
+                "endLine": 7,
+                "endColumn": 6,
+                "fix": {
+                    "range": [
+                        123,
+                        125
+                    ],
+                    "text": "    "
+                }
+            },
+            {
+                "ruleId": "func-names",
+                "severity": 2,
+                "message": "Unexpected unnamed function.",
+                "line": 5,
+                "column": 24,
+                "nodeType": "FunctionExpression",
+                "endLine": 7,
+                "endColumn": 4
+            },
+            {
+                "ruleId": "prefer-arrow-callback",
+                "severity": 2,
+                "message": "Unexpected function expression.",
+                "line": 5,
+                "column": 24,
+                "nodeType": "FunctionExpression",
+                "endLine": 7,
+                "endColumn": 4,
+                "fix": {
+                    "range": [
+                        146,
+                        181
+                    ],
+                    "text": "(watcher) => {\n    // ...\n  }"
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 12 spaces but found 4.",
+                "line": 6,
+                "column": 1,
+                "nodeType": "Line",
+                "endLine": 6,
+                "endColumn": 5,
+                "fix": {
+                    "range": [
+                        167,
+                        171
+                    ],
+                    "text": "            "
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 8 spaces but found 2.",
+                "line": 7,
+                "column": 1,
+                "nodeType": "Punctuator",
+                "endLine": 7,
+                "endColumn": 3,
+                "fix": {
+                    "range": [
+                        178,
+                        180
+                    ],
+                    "text": "        "
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 8 spaces but found 2.",
+                "line": 9,
+                "column": 1,
+                "nodeType": "Identifier",
+                "endLine": 9,
+                "endColumn": 3,
+                "fix": {
+                    "range": [
+                        185,
+                        187
+                    ],
+                    "text": "        "
+                }
+            },
+            {
+                "ruleId": "indent-legacy",
+                "severity": 2,
+                "message": "Expected indentation of 4 spaces but found 2.",
+                "line": 9,
+                "column": 3,
+                "nodeType": "ExpressionStatement",
+                "endLine": 11,
+                "endColumn": 5,
+                "fix": {
+                    "range": [
+                        185,
+                        187
+                    ],
+                    "text": "    "
+                }
+            },
+            {
+                "ruleId": "angular/controller-as",
+                "severity": 2,
+                "message": "You should not set properties on $scope in controllers. Use controllerAs syntax and add data to \"this\"",
+                "line": 9,
+                "column": 3,
+                "nodeType": "ExpressionStatement",
+                "endLine": 11,
+                "endColumn": 5
+            },
+            {
+                "ruleId": "func-names",
+                "severity": 2,
+                "message": "Unexpected unnamed function.",
+                "line": 9,
+                "column": 21,
+                "nodeType": "FunctionExpression",
+                "endLine": 11,
+                "endColumn": 4
+            },
+            {
+                "ruleId": "space-before-function-paren",
+                "severity": 2,
+                "message": "Missing space before function parentheses.",
+                "line": 9,
+                "column": 29,
+                "nodeType": "FunctionExpression",
+                "fix": {
+                    "range": [
+                        213,
+                        213
+                    ],
+                    "text": " "
+                }
+            },
+            {
+                "ruleId": "padded-blocks",
+                "severity": 2,
+                "message": "Block must be padded by blank lines.",
+                "line": 9,
+                "column": 32,
+                "nodeType": "BlockStatement",
+                "fix": {
+                    "range": [
+                        217,
+                        217
+                    ],
+                    "text": "\n"
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 12 spaces but found 4.",
+                "line": 10,
+                "column": 1,
+                "nodeType": "Identifier",
+                "endLine": 10,
+                "endColumn": 5,
+                "fix": {
+                    "range": [
+                        218,
+                        222
+                    ],
+                    "text": "            "
+                }
+            },
+            {
+                "ruleId": "indent-legacy",
+                "severity": 2,
+                "message": "Expected indentation of 6 spaces but found 4.",
+                "line": 10,
+                "column": 5,
+                "nodeType": "ExpressionStatement",
+                "endLine": 10,
+                "endColumn": 56,
+                "fix": {
+                    "range": [
+                        218,
+                        222
+                    ],
+                    "text": "      "
+                }
+            },
+            {
+                "ruleId": "angular/controller-as",
+                "severity": 2,
+                "message": "You should not set properties on $scope in controllers. Use controllerAs syntax and add data to \"this\"",
+                "line": 10,
+                "column": 5,
+                "nodeType": "ExpressionStatement",
+                "endLine": 10,
+                "endColumn": 56
+            },
+            {
+                "ruleId": "prefer-template",
+                "severity": 2,
+                "message": "Unexpected string concatenation.",
+                "line": 10,
+                "column": 23,
+                "nodeType": "BinaryExpression",
+                "endLine": 10,
+                "endColumn": 55,
+                "fix": {
+                    "range": [
+                        240,
+                        272
+                    ],
+                    "text": "`Hello ${  $scope.username  }!`"
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 8 spaces but found 2.",
+                "line": 11,
+                "column": 1,
+                "nodeType": "Punctuator",
+                "endLine": 11,
+                "endColumn": 3,
+                "fix": {
+                    "range": [
+                        274,
+                        276
+                    ],
+                    "text": "        "
+                }
+            },
+            {
+                "ruleId": "padded-blocks",
+                "severity": 2,
+                "message": "Block must be padded by blank lines.",
+                "line": 11,
+                "column": 3,
+                "nodeType": "BlockStatement",
+                "fix": {
+                    "range": [
+                        276,
+                        276
+                    ],
+                    "text": "\n"
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 4 spaces but found 0.",
+                "line": 12,
+                "column": 1,
+                "nodeType": "Punctuator",
+                "endLine": 12,
+                "endColumn": 1,
+                "fix": {
+                    "range": [
+                        279,
+                        279
+                    ],
+                    "text": "    "
+                }
+            },
+            {
+                "ruleId": "padded-blocks",
+                "severity": 2,
+                "message": "Block must be padded by blank lines.",
+                "line": 12,
+                "column": 1,
+                "nodeType": "BlockStatement",
+                "fix": {
+                    "range": [
+                        279,
+                        279
+                    ],
+                    "text": "\n"
+                }
+            },
+            {
+                "ruleId": "array-bracket-newline",
+                "severity": 2,
+                "message": "A linebreak is required before ']'.",
+                "line": 12,
+                "column": 2,
+                "nodeType": "ArrayExpression",
+                "messageId": "missingClosingLinebreak",
+                "endLine": 12,
+                "endColumn": 3,
+                "fix": {
+                    "range": [
+                        280,
+                        280
+                    ],
+                    "text": "\n"
+                }
+            },
+            {
+                "ruleId": "angular/file-name",
+                "severity": 2,
+                "message": "Filename must be \"MyController.js\"",
+                "line": 14,
+                "column": 1,
+                "nodeType": "CallExpression",
+                "endLine": 16,
+                "endColumn": 3
+            },
+            {
+                "ruleId": "angular/module-getter",
+                "severity": 2,
+                "message": "Avoid using a variable and instead use chaining with the getter syntax.",
+                "line": 14,
+                "column": 1,
+                "nodeType": "ExpressionStatement",
+                "endLine": 16,
+                "endColumn": 4
+            },
+            {
+                "ruleId": "prefer-arrow-callback",
+                "severity": 2,
+                "message": "Unexpected function expression.",
+                "line": 14,
+                "column": 32,
+                "nodeType": "FunctionExpression",
+                "endLine": 16,
+                "endColumn": 2,
+                "fix": {
+                    "range": [
+                        316,
+                        340
+                    ],
+                    "text": "() => {\n  // ...\n}"
+                }
+            },
+            {
+                "ruleId": "func-names",
+                "severity": 2,
+                "message": "Unexpected unnamed function.",
+                "line": 14,
+                "column": 32,
+                "nodeType": "FunctionExpression",
+                "endLine": 16,
+                "endColumn": 2
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 4 spaces but found 2.",
+                "line": 15,
+                "column": 1,
+                "nodeType": "Line",
+                "endLine": 15,
+                "endColumn": 3,
+                "fix": {
+                    "range": [
+                        330,
+                        332
+                    ],
+                    "text": "    "
+                }
+            },
+            {
+                "ruleId": "max-len",
+                "severity": 2,
+                "message": "Line 16 exceeds the maximum line length of 80.",
+                "line": 16,
+                "column": 1,
+                "nodeType": "Program"
+            },
+            {
+                "ruleId": "line-comment-position",
+                "severity": 2,
+                "message": "Expected comment to be above code.",
+                "line": 16,
+                "column": 5,
+                "nodeType": "Line",
+                "endLine": 16,
+                "endColumn": 86
+            },
+            {
+                "ruleId": "no-inline-comments",
+                "severity": 2,
+                "message": "Unexpected comment inline with code.",
+                "line": 16,
+                "column": 5,
+                "nodeType": "Line",
+                "endLine": 16,
+                "endColumn": 86
+            },
+            {
+                "ruleId": "capitalized-comments",
+                "severity": 2,
+                "message": "Comments should not begin with a lowercase character",
+                "line": 16,
+                "column": 5,
+                "nodeType": null,
+                "messageId": "unexpectedLowercaseComment",
+                "endLine": 16,
+                "endColumn": 86,
+                "fix": {
+                    "range": [
+                        346,
+                        347
+                    ],
+                    "text": "E"
+                }
+            }
+        ],
+        "errorCount": 42,
+        "warningCount": 0,
+        "fixableErrorCount": 28,
+        "fixableWarningCount": 0,
+        "source": "angular.module('scopeExample', [])\n.controller('MyController', ['$scope', function($scope) {\n  $scope.username = 'World';\n\n  $scope.apply.forEach(function (watcher) {\n    // ...\n  });\n\n  $scope.sayHello = function() {\n    $scope.greeting = 'Hello ' + $scope.username + '!';\n  };\n}]);\n\napp.controller('MyController', function () {\n  // ...\n}); // error: Avoid using a variable and instead use chaining with the getter syntax."
+    }
+]
