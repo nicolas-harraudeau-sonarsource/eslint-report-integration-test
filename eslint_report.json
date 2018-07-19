@@ -1,29 +1,2120 @@
 [
     {
-        "filePath": "/Users/nicolasharraudeau/sonarsource/sonarjs-eslint-reports/jscode/src/index.js",
+        "filePath": "/Users/nicolasharraudeau/sonarsource/sonarjs-eslint-reports/jscode/src/ember.js",
         "messages": [
+            {
+                "ruleId": "ember/new-module-imports",
+                "severity": 2,
+                "message": "Use import $ from 'jquery'; instead of using Ember.$",
+                "line": 3,
+                "column": 1,
+                "nodeType": "Identifier",
+                "endLine": 3,
+                "endColumn": 6
+            },
+            {
+                "ruleId": "padded-blocks",
+                "severity": 2,
+                "message": "Block must be padded by blank lines.",
+                "line": 3,
+                "column": 67,
+                "nodeType": "BlockStatement",
+                "fix": {
+                    "range": [
+                        100,
+                        100
+                    ],
+                    "text": "\n"
+                }
+            },
+            {
+                "ruleId": "ember/jquery-ember-run",
+                "severity": 2,
+                "message": "Don't use jQuery without Ember Run Loop",
+                "line": 4,
+                "column": 5,
+                "nodeType": "MemberExpression",
+                "endLine": 4,
+                "endColumn": 38
+            },
+            {
+                "ruleId": "no-underscore-dangle",
+                "severity": 2,
+                "message": "Unexpected dangling '_' in '_handlerActionFromController'.",
+                "line": 4,
+                "column": 5,
+                "nodeType": "MemberExpression",
+                "endLine": 4,
+                "endColumn": 38
+            },
+            {
+                "ruleId": "no-invalid-this",
+                "severity": 2,
+                "message": "Unexpected 'this'.",
+                "line": 4,
+                "column": 5,
+                "nodeType": "ThisExpression",
+                "endLine": 4,
+                "endColumn": 9
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 0 spaces but found 2.",
+                "line": 5,
+                "column": 1,
+                "nodeType": "Punctuator",
+                "endLine": 5,
+                "endColumn": 3,
+                "fix": {
+                    "range": [
+                        142,
+                        144
+                    ],
+                    "text": ""
+                }
+            },
+            {
+                "ruleId": "indent-legacy",
+                "severity": 2,
+                "message": "Expected indentation of 0 spaces but found 2.",
+                "line": 5,
+                "column": 3,
+                "nodeType": "BlockStatement",
+                "fix": {
+                    "range": [
+                        142,
+                        144
+                    ],
+                    "text": ""
+                }
+            },
+            {
+                "ruleId": "padded-blocks",
+                "severity": 2,
+                "message": "Block must be padded by blank lines.",
+                "line": 5,
+                "column": 3,
+                "nodeType": "BlockStatement",
+                "fix": {
+                    "range": [
+                        144,
+                        144
+                    ],
+                    "text": "\n"
+                }
+            }
+        ],
+        "errorCount": 8,
+        "warningCount": 0,
+        "fixableErrorCount": 4,
+        "fixableWarningCount": 0,
+        "source": "const Ember = require('ember');\n\nEmber.$('#something-rendered-by-jquery-plugin').on('click', () => {\n    this._handlerActionFromController();\n  });"
+    },
+    {
+        "filePath": "/Users/nicolasharraudeau/sonarsource/sonarjs-eslint-reports/jscode/src/flow.js",
+        "messages": [
+            {
+                "ruleId": "no-unused-vars",
+                "severity": 2,
+                "message": "'X' is defined but never used.",
+                "line": 2,
+                "column": 6,
+                "nodeType": "Identifier",
+                "endLine": 2,
+                "endColumn": 7
+            },
+            {
+                "ruleId": "flowtype/boolean-style",
+                "severity": 2,
+                "message": "Use \"boolean\", not \"bool\"",
+                "line": 2,
+                "column": 10,
+                "nodeType": "BooleanTypeAnnotation",
+                "endLine": 2,
+                "endColumn": 14,
+                "fix": {
+                    "range": [
+                        18,
+                        22
+                    ],
+                    "text": "boolean"
+                }
+            },
+            {
+                "ruleId": "capitalized-comments",
+                "severity": 2,
+                "message": "Comments should not begin with a lowercase character",
+                "line": 2,
+                "column": 15,
+                "nodeType": null,
+                "messageId": "unexpectedLowercaseComment",
+                "endLine": 2,
+                "endColumn": 39,
+                "fix": {
+                    "range": [
+                        25,
+                        26
+                    ],
+                    "text": "F"
+                }
+            },
+            {
+                "ruleId": "line-comment-position",
+                "severity": 2,
+                "message": "Expected comment to be above code.",
+                "line": 2,
+                "column": 15,
+                "nodeType": "Line",
+                "endLine": 2,
+                "endColumn": 39
+            },
+            {
+                "ruleId": "no-inline-comments",
+                "severity": 2,
+                "message": "Unexpected comment inline with code.",
+                "line": 2,
+                "column": 15,
+                "nodeType": "Line",
+                "endLine": 2,
+                "endColumn": 39
+            },
+            {
+                "ruleId": "spaced-comment",
+                "severity": 2,
+                "message": "Expected space or tab after '//' in comment.",
+                "line": 2,
+                "column": 15,
+                "nodeType": "Line",
+                "endLine": 2,
+                "endColumn": 39,
+                "fix": {
+                    "range": [
+                        25,
+                        25
+                    ],
+                    "text": " "
+                }
+            }
+        ],
+        "errorCount": 6,
+        "warningCount": 0,
+        "fixableErrorCount": 3,
+        "fixableWarningCount": 0,
+        "source": "// @flow\ntype X = bool //flowtype/boolean-style"
+    },
+    {
+        "filePath": "/Users/nicolasharraudeau/sonarsource/sonarjs-eslint-reports/jscode/src/hello.vue",
+        "messages": [
+            {
+                "ruleId": "vue/html-indent",
+                "severity": 2,
+                "message": "Expected indentation of 2 spaces but found 0 spaces.",
+                "line": 2,
+                "column": 1,
+                "nodeType": null,
+                "endLine": 2,
+                "endColumn": 1,
+                "fix": {
+                    "range": [
+                        11,
+                        11
+                    ],
+                    "text": "  "
+                }
+            },
+            {
+                "ruleId": "vue/no-multi-spaces",
+                "severity": 2,
+                "message": "Multiple spaces found before 'v-on'.",
+                "line": 2,
+                "column": 5,
+                "nodeType": "HTMLIdentifier",
+                "endLine": 2,
+                "endColumn": 9,
+                "fix": {
+                    "range": [
+                        15,
+                        19
+                    ],
+                    "text": " "
+                }
+            },
+            {
+                "ruleId": "vue/valid-v-on",
+                "severity": 2,
+                "message": "'v-on' directives require that attribute value or verb modifiers.",
+                "line": 2,
+                "column": 9,
+                "nodeType": "VAttribute",
+                "endLine": 2,
+                "endColumn": 13
+            },
+            {
+                "ruleId": "vue/html-indent",
+                "severity": 2,
+                "message": "Expected indentation of 4 spaces but found 3 spaces.",
+                "line": 3,
+                "column": 1,
+                "nodeType": null,
+                "endLine": 3,
+                "endColumn": 4,
+                "fix": {
+                    "range": [
+                        61,
+                        64
+                    ],
+                    "text": "    "
+                }
+            },
+            {
+                "ruleId": "vue/html-self-closing",
+                "severity": 2,
+                "message": "Disallow self-closing on HTML void elements (<img/>).",
+                "line": 3,
+                "column": 4,
+                "nodeType": "VElement",
+                "endLine": 3,
+                "endColumn": 27,
+                "fix": {
+                    "range": [
+                        85,
+                        87
+                    ],
+                    "text": ">"
+                }
+            },
+            {
+                "ruleId": "vue/html-quotes",
+                "severity": 2,
+                "message": "Expected to be enclosed by double quotes.",
+                "line": 3,
+                "column": 13,
+                "nodeType": "VLiteral",
+                "endLine": 3,
+                "endColumn": 25,
+                "fix": {
+                    "range": [
+                        73,
+                        85
+                    ],
+                    "text": "\"./logo.png\""
+                }
+            },
+            {
+                "ruleId": "vue/html-indent",
+                "severity": 2,
+                "message": "Expected indentation of 2 spaces but found 3 spaces.",
+                "line": 4,
+                "column": 1,
+                "nodeType": null,
+                "endLine": 4,
+                "endColumn": 4,
+                "fix": {
+                    "range": [
+                        88,
+                        91
+                    ],
+                    "text": "  "
+                }
+            },
+            {
+                "ruleId": "import/no-unresolved",
+                "severity": 2,
+                "message": "Unable to resolve path to module './OtherComponent.vue'.",
+                "line": 8,
+                "column": 28,
+                "nodeType": "Literal",
+                "endLine": 8,
+                "endColumn": 50
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 4 spaces but found 2.",
+                "line": 10,
+                "column": 1,
+                "nodeType": "Identifier",
+                "endLine": 10,
+                "endColumn": 3,
+                "fix": {
+                    "range": [
+                        230,
+                        232
+                    ],
+                    "text": "    "
+                }
+            },
+            {
+                "ruleId": "indent-legacy",
+                "severity": 2,
+                "message": "Expected indentation of 4 spaces but found 2.",
+                "line": 10,
+                "column": 3,
+                "nodeType": "Property",
+                "endLine": 12,
+                "endColumn": 4,
+                "fix": {
+                    "range": [
+                        230,
+                        232
+                    ],
+                    "text": "    "
+                }
+            },
+            {
+                "ruleId": "quote-props",
+                "severity": 2,
+                "message": "Unquoted property 'components' found.",
+                "line": 10,
+                "column": 3,
+                "nodeType": "Property",
+                "endLine": 12,
+                "endColumn": 4,
+                "fix": {
+                    "range": [
+                        232,
+                        242
+                    ],
+                    "text": "\"components\""
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 8 spaces but found 4.",
+                "line": 11,
+                "column": 1,
+                "nodeType": "Identifier",
+                "endLine": 11,
+                "endColumn": 5,
+                "fix": {
+                    "range": [
+                        246,
+                        250
+                    ],
+                    "text": "        "
+                }
+            },
+            {
+                "ruleId": "indent-legacy",
+                "severity": 2,
+                "message": "Expected indentation of 6 spaces but found 4.",
+                "line": 11,
+                "column": 5,
+                "nodeType": "Property",
+                "endLine": 11,
+                "endColumn": 19,
+                "fix": {
+                    "range": [
+                        246,
+                        250
+                    ],
+                    "text": "      "
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 4 spaces but found 2.",
+                "line": 12,
+                "column": 1,
+                "nodeType": "Punctuator",
+                "endLine": 12,
+                "endColumn": 3,
+                "fix": {
+                    "range": [
+                        265,
+                        267
+                    ],
+                    "text": "    "
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 4 spaces but found 2.",
+                "line": 13,
+                "column": 1,
+                "nodeType": "Identifier",
+                "endLine": 13,
+                "endColumn": 3,
+                "fix": {
+                    "range": [
+                        270,
+                        272
+                    ],
+                    "text": "    "
+                }
+            },
+            {
+                "ruleId": "indent-legacy",
+                "severity": 2,
+                "message": "Expected indentation of 4 spaces but found 2.",
+                "line": 13,
+                "column": 3,
+                "nodeType": "Property",
+                "endLine": 17,
+                "endColumn": 4,
+                "fix": {
+                    "range": [
+                        270,
+                        272
+                    ],
+                    "text": "    "
+                }
+            },
+            {
+                "ruleId": "padded-blocks",
+                "severity": 2,
+                "message": "Block must be padded by blank lines.",
+                "line": 13,
+                "column": 11,
+                "nodeType": "BlockStatement",
+                "fix": {
+                    "range": [
+                        281,
+                        281
+                    ],
+                    "text": "\n"
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 8 spaces but found 4.",
+                "line": 14,
+                "column": 1,
+                "nodeType": "Keyword",
+                "endLine": 14,
+                "endColumn": 5,
+                "fix": {
+                    "range": [
+                        282,
+                        286
+                    ],
+                    "text": "        "
+                }
+            },
+            {
+                "ruleId": "indent-legacy",
+                "severity": 2,
+                "message": "Expected indentation of 6 spaces but found 4.",
+                "line": 14,
+                "column": 5,
+                "nodeType": "ReturnStatement",
+                "endLine": 16,
+                "endColumn": 6,
+                "fix": {
+                    "range": [
+                        282,
+                        286
+                    ],
+                    "text": "      "
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 12 spaces but found 6.",
+                "line": 15,
+                "column": 1,
+                "nodeType": "Identifier",
+                "endLine": 15,
+                "endColumn": 7,
+                "fix": {
+                    "range": [
+                        295,
+                        301
+                    ],
+                    "text": "            "
+                }
+            },
+            {
+                "ruleId": "quote-props",
+                "severity": 2,
+                "message": "Unquoted property 'greeting' found.",
+                "line": 15,
+                "column": 7,
+                "nodeType": "Property",
+                "endLine": 15,
+                "endColumn": 24,
+                "fix": {
+                    "range": [
+                        301,
+                        309
+                    ],
+                    "text": "\"greeting\""
+                }
+            },
+            {
+                "ruleId": "indent-legacy",
+                "severity": 2,
+                "message": "Expected indentation of 8 spaces but found 6.",
+                "line": 15,
+                "column": 7,
+                "nodeType": "Property",
+                "endLine": 15,
+                "endColumn": 24,
+                "fix": {
+                    "range": [
+                        295,
+                        301
+                    ],
+                    "text": "        "
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 8 spaces but found 4.",
+                "line": 16,
+                "column": 1,
+                "nodeType": "Punctuator",
+                "endLine": 16,
+                "endColumn": 5,
+                "fix": {
+                    "range": [
+                        319,
+                        323
+                    ],
+                    "text": "        "
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 4 spaces but found 2.",
+                "line": 17,
+                "column": 1,
+                "nodeType": "Punctuator",
+                "endLine": 17,
+                "endColumn": 3,
+                "fix": {
+                    "range": [
+                        325,
+                        327
+                    ],
+                    "text": "    "
+                }
+            },
+            {
+                "ruleId": "padded-blocks",
+                "severity": 2,
+                "message": "Block must be padded by blank lines.",
+                "line": 17,
+                "column": 3,
+                "nodeType": "BlockStatement",
+                "fix": {
+                    "range": [
+                        327,
+                        327
+                    ],
+                    "text": "\n"
+                }
+            }
+        ],
+        "errorCount": 25,
+        "warningCount": 0,
+        "fixableErrorCount": 23,
+        "fixableWarningCount": 0,
+        "source": "<template>\n<div    v-on> <!--vue/valid-v-on error => bug -->\n   <img src='./logo.png'/>\n   </div> <!-- vue/no-parsing-error error => bug -->\n</template>\n\n<script>\nimport OtherComponent from './OtherComponent.vue'\nexport default {\n  components: {\n    OtherComponent\n  },\n  data () {\n    return {\n      greeting: 'Hello'\n    }\n  }\n}\n</script>\n\n<style lang=\"stylus\" scoped>\np\n  font-size 2em\n  text-align center\n</style>"
+    },
+    {
+        "filePath": "/Users/nicolasharraudeau/sonarsource/sonarjs-eslint-reports/jscode/src/import_export.js",
+        "messages": [],
+        "errorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0
+    },
+    {
+        "filePath": "/Users/nicolasharraudeau/sonarsource/sonarjs-eslint-reports/jscode/src/import_import.js",
+        "messages": [
+            {
+                "ruleId": "no-unused-vars",
+                "severity": 2,
+                "message": "'myconst' is defined but never used.",
+                "line": 1,
+                "column": 9,
+                "nodeType": "Identifier",
+                "endLine": 1,
+                "endColumn": 16
+            },
+            {
+                "ruleId": "no-unused-vars",
+                "severity": 2,
+                "message": "'unknown' is defined but never used.",
+                "line": 2,
+                "column": 9,
+                "nodeType": "Identifier",
+                "endLine": 2,
+                "endColumn": 16
+            },
+            {
+                "ruleId": "import/no-unresolved",
+                "severity": 2,
+                "message": "Unable to resolve path to module 'unknown'.",
+                "line": 2,
+                "column": 23,
+                "nodeType": "Literal",
+                "endLine": 2,
+                "endColumn": 32
+            },
+            {
+                "ruleId": "capitalized-comments",
+                "severity": 2,
+                "message": "Comments should not begin with a lowercase character",
+                "line": 2,
+                "column": 34,
+                "nodeType": null,
+                "messageId": "unexpectedLowercaseComment",
+                "endLine": 2,
+                "endColumn": 57,
+                "fix": {
+                    "range": [
+                        77,
+                        78
+                    ],
+                    "text": "I"
+                }
+            },
+            {
+                "ruleId": "line-comment-position",
+                "severity": 2,
+                "message": "Expected comment to be above code.",
+                "line": 2,
+                "column": 34,
+                "nodeType": "Line",
+                "endLine": 2,
+                "endColumn": 57
+            },
+            {
+                "ruleId": "no-inline-comments",
+                "severity": 2,
+                "message": "Unexpected comment inline with code.",
+                "line": 2,
+                "column": 34,
+                "nodeType": "Line",
+                "endLine": 2,
+                "endColumn": 57
+            }
+        ],
+        "errorCount": 6,
+        "warningCount": 0,
+        "fixableErrorCount": 1,
+        "fixableWarningCount": 0,
+        "source": "import {myconst} from './import_export';\nimport {unknown} from 'unknown'; // import/no-unresolved"
+    },
+    {
+        "filePath": "/Users/nicolasharraudeau/sonarsource/sonarjs-eslint-reports/jscode/src/MyControler.js",
+        "messages": [
+            {
+                "ruleId": "angular/file-name",
+                "severity": 2,
+                "message": "Filename must be \"scopeExample.js\"",
+                "line": 1,
+                "column": 1,
+                "nodeType": "CallExpression",
+                "endLine": 1,
+                "endColumn": 35
+            },
+            {
+                "ruleId": "no-undef",
+                "severity": 2,
+                "message": "'angular' is not defined.",
+                "line": 1,
+                "column": 1,
+                "nodeType": "Identifier",
+                "endLine": 1,
+                "endColumn": 8
+            },
+            {
+                "ruleId": "angular/file-name",
+                "severity": 2,
+                "message": "Filename must be \"MyController.js\"",
+                "line": 1,
+                "column": 1,
+                "nodeType": "CallExpression",
+                "endLine": 19,
+                "endColumn": 4
+            },
             {
                 "ruleId": "indent",
                 "severity": 2,
                 "message": "Expected indentation of 4 spaces but found 0.",
                 "line": 2,
                 "column": 1,
-                "nodeType": "Identifier",
+                "nodeType": "Punctuator",
                 "endLine": 2,
                 "endColumn": 1,
                 "fix": {
                     "range": [
-                        15,
-                        15
+                        35,
+                        35
                     ],
                     "text": "    "
                 }
+            },
+            {
+                "ruleId": "dot-location",
+                "severity": 2,
+                "message": "Expected dot to be on same line as object.",
+                "line": 2,
+                "column": 1,
+                "nodeType": "MemberExpression",
+                "messageId": "expectedDotAfterObject",
+                "fix": {
+                    "range": [
+                        34,
+                        36
+                    ],
+                    "text": ".\n"
+                }
+            },
+            {
+                "ruleId": "array-bracket-newline",
+                "severity": 2,
+                "message": "A linebreak is required after '['.",
+                "line": 2,
+                "column": 29,
+                "nodeType": "ArrayExpression",
+                "messageId": "missingOpeningLinebreak",
+                "endLine": 2,
+                "endColumn": 30,
+                "fix": {
+                    "range": [
+                        64,
+                        64
+                    ],
+                    "text": "\n"
+                }
+            },
+            {
+                "ruleId": "array-element-newline",
+                "severity": 2,
+                "message": "There should be a linebreak after this element.",
+                "line": 2,
+                "column": 39,
+                "nodeType": null,
+                "messageId": "missingLineBreak",
+                "endLine": 2,
+                "endColumn": 40,
+                "fix": {
+                    "range": [
+                        73,
+                        74
+                    ],
+                    "text": "\n"
+                }
+            },
+            {
+                "ruleId": "func-names",
+                "severity": 2,
+                "message": "Unexpected unnamed function.",
+                "line": 2,
+                "column": 40,
+                "nodeType": "FunctionExpression",
+                "endLine": 19,
+                "endColumn": 2
+            },
+            {
+                "ruleId": "space-before-function-paren",
+                "severity": 2,
+                "message": "Missing space before function parentheses.",
+                "line": 2,
+                "column": 48,
+                "nodeType": "FunctionExpression",
+                "fix": {
+                    "range": [
+                        82,
+                        82
+                    ],
+                    "text": " "
+                }
+            },
+            {
+                "ruleId": "padded-blocks",
+                "severity": 2,
+                "message": "Block must be padded by blank lines.",
+                "line": 2,
+                "column": 57,
+                "nodeType": "BlockStatement",
+                "fix": {
+                    "range": [
+                        92,
+                        92
+                    ],
+                    "text": "\n"
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 8 spaces but found 2.",
+                "line": 3,
+                "column": 1,
+                "nodeType": "Identifier",
+                "endLine": 3,
+                "endColumn": 3,
+                "fix": {
+                    "range": [
+                        93,
+                        95
+                    ],
+                    "text": "        "
+                }
+            },
+            {
+                "ruleId": "angular/controller-as",
+                "severity": 2,
+                "message": "You should not set properties on $scope in controllers. Use controllerAs syntax and add data to \"this\"",
+                "line": 3,
+                "column": 3,
+                "nodeType": "ExpressionStatement",
+                "endLine": 3,
+                "endColumn": 29
+            },
+            {
+                "ruleId": "indent-legacy",
+                "severity": 2,
+                "message": "Expected indentation of 4 spaces but found 2.",
+                "line": 3,
+                "column": 3,
+                "nodeType": "ExpressionStatement",
+                "endLine": 3,
+                "endColumn": 29,
+                "fix": {
+                    "range": [
+                        93,
+                        95
+                    ],
+                    "text": "    "
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 8 spaces but found 2.",
+                "line": 5,
+                "column": 1,
+                "nodeType": "Identifier",
+                "endLine": 5,
+                "endColumn": 3,
+                "fix": {
+                    "range": [
+                        123,
+                        125
+                    ],
+                    "text": "        "
+                }
+            },
+            {
+                "ruleId": "indent-legacy",
+                "severity": 2,
+                "message": "Expected indentation of 4 spaces but found 2.",
+                "line": 5,
+                "column": 3,
+                "nodeType": "ExpressionStatement",
+                "endLine": 7,
+                "endColumn": 6,
+                "fix": {
+                    "range": [
+                        123,
+                        125
+                    ],
+                    "text": "    "
+                }
+            },
+            {
+                "ruleId": "func-names",
+                "severity": 2,
+                "message": "Unexpected unnamed function.",
+                "line": 5,
+                "column": 24,
+                "nodeType": "FunctionExpression",
+                "endLine": 7,
+                "endColumn": 4
+            },
+            {
+                "ruleId": "prefer-arrow-callback",
+                "severity": 2,
+                "message": "Unexpected function expression.",
+                "line": 5,
+                "column": 24,
+                "nodeType": "FunctionExpression",
+                "endLine": 7,
+                "endColumn": 4,
+                "fix": {
+                    "range": [
+                        146,
+                        187
+                    ],
+                    "text": "(watcher) => {\n    // ... error\n  }"
+                }
+            },
+            {
+                "ruleId": "no-unused-vars",
+                "severity": 2,
+                "message": "'watcher' is defined but never used.",
+                "line": 5,
+                "column": 34,
+                "nodeType": "Identifier",
+                "endLine": 5,
+                "endColumn": 41
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 12 spaces but found 4.",
+                "line": 6,
+                "column": 1,
+                "nodeType": "Line",
+                "endLine": 6,
+                "endColumn": 5,
+                "fix": {
+                    "range": [
+                        167,
+                        171
+                    ],
+                    "text": "            "
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 8 spaces but found 2.",
+                "line": 7,
+                "column": 1,
+                "nodeType": "Punctuator",
+                "endLine": 7,
+                "endColumn": 3,
+                "fix": {
+                    "range": [
+                        184,
+                        186
+                    ],
+                    "text": "        "
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 8 spaces but found 2.",
+                "line": 9,
+                "column": 1,
+                "nodeType": "Identifier",
+                "endLine": 9,
+                "endColumn": 3,
+                "fix": {
+                    "range": [
+                        191,
+                        193
+                    ],
+                    "text": "        "
+                }
+            },
+            {
+                "ruleId": "angular/controller-as",
+                "severity": 2,
+                "message": "You should not set properties on $scope in controllers. Use controllerAs syntax and add data to \"this\"",
+                "line": 9,
+                "column": 3,
+                "nodeType": "ExpressionStatement",
+                "endLine": 11,
+                "endColumn": 5
+            },
+            {
+                "ruleId": "indent-legacy",
+                "severity": 2,
+                "message": "Expected indentation of 4 spaces but found 2.",
+                "line": 9,
+                "column": 3,
+                "nodeType": "ExpressionStatement",
+                "endLine": 11,
+                "endColumn": 5,
+                "fix": {
+                    "range": [
+                        191,
+                        193
+                    ],
+                    "text": "    "
+                }
+            },
+            {
+                "ruleId": "func-names",
+                "severity": 2,
+                "message": "Unexpected unnamed function.",
+                "line": 9,
+                "column": 21,
+                "nodeType": "FunctionExpression",
+                "endLine": 11,
+                "endColumn": 4
+            },
+            {
+                "ruleId": "padded-blocks",
+                "severity": 2,
+                "message": "Block must be padded by blank lines.",
+                "line": 9,
+                "column": 33,
+                "nodeType": "BlockStatement",
+                "fix": {
+                    "range": [
+                        224,
+                        224
+                    ],
+                    "text": "\n"
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 12 spaces but found 4.",
+                "line": 10,
+                "column": 1,
+                "nodeType": "Identifier",
+                "endLine": 10,
+                "endColumn": 5,
+                "fix": {
+                    "range": [
+                        225,
+                        229
+                    ],
+                    "text": "            "
+                }
+            },
+            {
+                "ruleId": "indent-legacy",
+                "severity": 2,
+                "message": "Expected indentation of 6 spaces but found 4.",
+                "line": 10,
+                "column": 5,
+                "nodeType": "ExpressionStatement",
+                "endLine": 10,
+                "endColumn": 56,
+                "fix": {
+                    "range": [
+                        225,
+                        229
+                    ],
+                    "text": "      "
+                }
+            },
+            {
+                "ruleId": "angular/controller-as",
+                "severity": 2,
+                "message": "You should not set properties on $scope in controllers. Use controllerAs syntax and add data to \"this\"",
+                "line": 10,
+                "column": 5,
+                "nodeType": "ExpressionStatement",
+                "endLine": 10,
+                "endColumn": 56
+            },
+            {
+                "ruleId": "prefer-template",
+                "severity": 2,
+                "message": "Unexpected string concatenation.",
+                "line": 10,
+                "column": 23,
+                "nodeType": "BinaryExpression",
+                "endLine": 10,
+                "endColumn": 55,
+                "fix": {
+                    "range": [
+                        247,
+                        279
+                    ],
+                    "text": "`Hello ${  $scope.username  }!`"
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 8 spaces but found 2.",
+                "line": 11,
+                "column": 1,
+                "nodeType": "Punctuator",
+                "endLine": 11,
+                "endColumn": 3,
+                "fix": {
+                    "range": [
+                        281,
+                        283
+                    ],
+                    "text": "        "
+                }
+            },
+            {
+                "ruleId": "padded-blocks",
+                "severity": 2,
+                "message": "Block must be padded by blank lines.",
+                "line": 11,
+                "column": 3,
+                "nodeType": "BlockStatement",
+                "fix": {
+                    "range": [
+                        283,
+                        283
+                    ],
+                    "text": "\n"
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 8 spaces but found 2.",
+                "line": 13,
+                "column": 1,
+                "nodeType": "Block",
+                "endLine": 13,
+                "endColumn": 3,
+                "fix": {
+                    "range": [
+                        287,
+                        289
+                    ],
+                    "text": "        "
+                }
+            },
+            {
+                "ruleId": "spaced-comment",
+                "severity": 2,
+                "message": "Expected space or tab after '/*' in comment.",
+                "line": 13,
+                "column": 3,
+                "nodeType": "Block",
+                "endLine": 13,
+                "endColumn": 40,
+                "fix": {
+                    "range": [
+                        291,
+                        291
+                    ],
+                    "text": " "
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 8 spaces but found 2.",
+                "line": 15,
+                "column": 1,
+                "nodeType": "Line",
+                "endLine": 15,
+                "endColumn": 3,
+                "fix": {
+                    "range": [
+                        328,
+                        330
+                    ],
+                    "text": "        "
+                }
+            },
+            {
+                "ruleId": "capitalized-comments",
+                "severity": 2,
+                "message": "Comments should not begin with a lowercase character",
+                "line": 15,
+                "column": 3,
+                "nodeType": null,
+                "messageId": "unexpectedLowercaseComment",
+                "endLine": 15,
+                "endColumn": 13,
+                "fix": {
+                    "range": [
+                        333,
+                        334
+                    ],
+                    "text": "I"
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 8 spaces but found 2.",
+                "line": 16,
+                "column": 1,
+                "nodeType": "Identifier",
+                "endLine": 16,
+                "endColumn": 3,
+                "fix": {
+                    "range": [
+                        341,
+                        343
+                    ],
+                    "text": "        "
+                }
+            },
+            {
+                "ruleId": "indent-legacy",
+                "severity": 2,
+                "message": "Expected indentation of 4 spaces but found 2.",
+                "line": 16,
+                "column": 3,
+                "nodeType": "ExpressionStatement",
+                "endLine": 18,
+                "endColumn": 6,
+                "fix": {
+                    "range": [
+                        341,
+                        343
+                    ],
+                    "text": "    "
+                }
+            },
+            {
+                "ruleId": "angular/no-private-call",
+                "severity": 2,
+                "message": "Using $$-prefixed Angular objects/methods are not recommended",
+                "line": 16,
+                "column": 10,
+                "nodeType": "Identifier",
+                "endLine": 16,
+                "endColumn": 20
+            },
+            {
+                "ruleId": "prefer-arrow-callback",
+                "severity": 2,
+                "message": "Unexpected function expression.",
+                "line": 16,
+                "column": 29,
+                "nodeType": "FunctionExpression",
+                "endLine": 18,
+                "endColumn": 4,
+                "fix": {
+                    "range": [
+                        369,
+                        404
+                    ],
+                    "text": "(watcher) => {\n    // ...\n  }"
+                }
+            },
+            {
+                "ruleId": "func-names",
+                "severity": 2,
+                "message": "Unexpected unnamed function.",
+                "line": 16,
+                "column": 29,
+                "nodeType": "FunctionExpression",
+                "endLine": 18,
+                "endColumn": 4
+            },
+            {
+                "ruleId": "no-unused-vars",
+                "severity": 2,
+                "message": "'watcher' is defined but never used.",
+                "line": 16,
+                "column": 39,
+                "nodeType": "Identifier",
+                "endLine": 16,
+                "endColumn": 46
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 12 spaces but found 4.",
+                "line": 17,
+                "column": 1,
+                "nodeType": "Line",
+                "endLine": 17,
+                "endColumn": 5,
+                "fix": {
+                    "range": [
+                        390,
+                        394
+                    ],
+                    "text": "            "
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 8 spaces but found 2.",
+                "line": 18,
+                "column": 1,
+                "nodeType": "Punctuator",
+                "endLine": 18,
+                "endColumn": 3,
+                "fix": {
+                    "range": [
+                        401,
+                        403
+                    ],
+                    "text": "        "
+                }
+            },
+            {
+                "ruleId": "line-comment-position",
+                "severity": 2,
+                "message": "Expected comment to be above code.",
+                "line": 18,
+                "column": 7,
+                "nodeType": "Line",
+                "endLine": 18,
+                "endColumn": 78
+            },
+            {
+                "ruleId": "no-inline-comments",
+                "severity": 2,
+                "message": "Unexpected comment inline with code.",
+                "line": 18,
+                "column": 7,
+                "nodeType": "Line",
+                "endLine": 18,
+                "endColumn": 78
+            },
+            {
+                "ruleId": "capitalized-comments",
+                "severity": 2,
+                "message": "Comments should not begin with a lowercase character",
+                "line": 18,
+                "column": 7,
+                "nodeType": null,
+                "messageId": "unexpectedLowercaseComment",
+                "endLine": 18,
+                "endColumn": 78,
+                "fix": {
+                    "range": [
+                        410,
+                        411
+                    ],
+                    "text": "E"
+                }
+            },
+            {
+                "ruleId": "padded-blocks",
+                "severity": 2,
+                "message": "Block must be padded by blank lines.",
+                "line": 19,
+                "column": 1,
+                "nodeType": "BlockStatement",
+                "fix": {
+                    "range": [
+                        479,
+                        479
+                    ],
+                    "text": "\n"
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 4 spaces but found 0.",
+                "line": 19,
+                "column": 1,
+                "nodeType": "Punctuator",
+                "endLine": 19,
+                "endColumn": 1,
+                "fix": {
+                    "range": [
+                        479,
+                        479
+                    ],
+                    "text": "    "
+                }
+            },
+            {
+                "ruleId": "array-bracket-newline",
+                "severity": 2,
+                "message": "A linebreak is required before ']'.",
+                "line": 19,
+                "column": 2,
+                "nodeType": "ArrayExpression",
+                "messageId": "missingClosingLinebreak",
+                "endLine": 19,
+                "endColumn": 3,
+                "fix": {
+                    "range": [
+                        480,
+                        480
+                    ],
+                    "text": "\n"
+                }
+            },
+            {
+                "ruleId": "angular/file-name",
+                "severity": 2,
+                "message": "Filename must be \"MyController.js\"",
+                "line": 21,
+                "column": 1,
+                "nodeType": "CallExpression",
+                "endLine": 23,
+                "endColumn": 3
+            },
+            {
+                "ruleId": "angular/module-getter",
+                "severity": 2,
+                "message": "Avoid using a variable and instead use chaining with the getter syntax.",
+                "line": 21,
+                "column": 1,
+                "nodeType": "ExpressionStatement",
+                "endLine": 23,
+                "endColumn": 4
+            },
+            {
+                "ruleId": "no-undef",
+                "severity": 2,
+                "message": "'app' is not defined.",
+                "line": 21,
+                "column": 1,
+                "nodeType": "Identifier",
+                "endLine": 21,
+                "endColumn": 4
+            },
+            {
+                "ruleId": "prefer-arrow-callback",
+                "severity": 2,
+                "message": "Unexpected function expression.",
+                "line": 21,
+                "column": 32,
+                "nodeType": "FunctionExpression",
+                "endLine": 23,
+                "endColumn": 2,
+                "fix": {
+                    "range": [
+                        516,
+                        540
+                    ],
+                    "text": "() => {\n  // ...\n}"
+                }
+            },
+            {
+                "ruleId": "func-names",
+                "severity": 2,
+                "message": "Unexpected unnamed function.",
+                "line": 21,
+                "column": 32,
+                "nodeType": "FunctionExpression",
+                "endLine": 23,
+                "endColumn": 2
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 4 spaces but found 2.",
+                "line": 22,
+                "column": 1,
+                "nodeType": "Line",
+                "endLine": 22,
+                "endColumn": 3,
+                "fix": {
+                    "range": [
+                        530,
+                        532
+                    ],
+                    "text": "    "
+                }
+            },
+            {
+                "ruleId": "max-len",
+                "severity": 2,
+                "message": "Line 23 exceeds the maximum line length of 80.",
+                "line": 23,
+                "column": 1,
+                "nodeType": "Program"
+            },
+            {
+                "ruleId": "line-comment-position",
+                "severity": 2,
+                "message": "Expected comment to be above code.",
+                "line": 23,
+                "column": 5,
+                "nodeType": "Line",
+                "endLine": 23,
+                "endColumn": 86
+            },
+            {
+                "ruleId": "no-inline-comments",
+                "severity": 2,
+                "message": "Unexpected comment inline with code.",
+                "line": 23,
+                "column": 5,
+                "nodeType": "Line",
+                "endLine": 23,
+                "endColumn": 86
+            },
+            {
+                "ruleId": "capitalized-comments",
+                "severity": 2,
+                "message": "Comments should not begin with a lowercase character",
+                "line": 23,
+                "column": 5,
+                "nodeType": null,
+                "messageId": "unexpectedLowercaseComment",
+                "endLine": 23,
+                "endColumn": 86,
+                "fix": {
+                    "range": [
+                        546,
+                        547
+                    ],
+                    "text": "E"
+                }
+            }
+        ],
+        "errorCount": 59,
+        "warningCount": 0,
+        "fixableErrorCount": 37,
+        "fixableWarningCount": 0,
+        "source": "angular.module('scopeExample', [])\n.controller('MyController', ['$scope', function($scope) {\n  $scope.username = 'World';\n\n  $scope.apply.forEach(function (watcher) {\n    // ... error\n  });\n\n  $scope.sayHello = function () {\n    $scope.greeting = 'Hello ' + $scope.username + '!';\n  };\n\n  /*eslint angular/no-private-call: 2*/\n\n  // invalid\n  $scope.$$watchers.forEach(function (watcher) {\n    // ...\n  }); // error: Using $$-prefixed Angular objects/methods are not recommended\n}]);\n\napp.controller('MyController', function () {\n  // ...\n}); // error: Avoid using a variable and instead use chaining with the getter syntax."
+    },
+    {
+        "filePath": "/Users/nicolasharraudeau/sonarsource/sonarjs-eslint-reports/jscode/src/possible_errors.js",
+        "messages": [
+            {
+                "ruleId": null,
+                "fatal": true,
+                "severity": 2,
+                "message": "Parsing error: Argument name clash in strict mode\n\n\u001b[0m \u001b[90m 49 | \u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 50 | \u001b[39m\u001b[90m//no-dupe-args\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 51 | \u001b[39m\u001b[36mfunction\u001b[39m foo(a\u001b[33m,\u001b[39m b\u001b[33m,\u001b[39m a) {\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 52 | \u001b[39m    console\u001b[33m.\u001b[39mlog(\u001b[32m\"value of the second a:\"\u001b[39m\u001b[33m,\u001b[39m a)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 53 | \u001b[39m}\u001b[0m\n\u001b[0m \u001b[90m 54 | \u001b[39m\u001b[0m",
+                "line": 51,
+                "column": 20
             }
         ],
         "errorCount": 1,
         "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "source": "//for-direction\nfor (var i = 0; i < 10; i--) {\n}\n\n//getter-return\np = {\n    get name(){\n        // no returns.\n    }\n};\n\n//no-await-in-loop\nasync function foo(things) {\n    const results = [];\n    for (const thing of things) {\n        // Bad: each loop iteration is delayed until the entire asynchronous operation completes\n        results.push(await bar(thing)); //here\n    }\n    return baz(results);\n}\n\n//no-compare-neg-zero\nif (x === -0) {\n}\n\n//no-cond-assign\n// Check the user's job title\nif (user.jobTitle = \"manager\") {\n    // user.jobTitle is now incorrect\n}\n\n//no-console\nconsole.log(\"Made it here.\");\n\n//no-constant-condition\nif (false) {\n    doSomethingUnfinished();\n}\n\n//no-control-regex\nvar pattern1 = /\\x1f/;\nvar pattern2 = new RegExp(\"\\x1f\");\n\n//no-debugger\nfunction isTruthy(x) {\n    debugger;\n    return Boolean(x);\n}\n\n//no-dupe-args\nfunction foo(a, b, a) {\n    console.log(\"value of the second a:\", a);\n}\n\n//no-dupe-keys\nvar foo = {\n    bar: \"baz\",\n    bar: \"qux\"\n};\n\n//no-duplicate-case\nvar a = 1,\n    one = 1;\n\nswitch (a) {\n    case 1:\n        break;\n    case 2:\n        break;\n    case 1:         // duplicate test expression\n        break;\n    default:\n        break;\n}\n\n//no-empty\nif (foo) {\n}\n\n//no-empty-character-class\nvar foo = /^abc[]/;\n\n//no-ex-assign\ntry {\n    // code\n} catch (e) {\n    e = 10;\n}\n\n//no-extra-boolean-cast\nif (!!foo) {\n    // ...\n}\n\n//no-extra-parens\na = (b * c);\n\n//no-extra-semi\nvar x = 5;;\n\n//no-func-assign\nfunction foo() {}\nfoo = bar;\n\n//no-inner-declaration\nif (test) {\n    function doSomethingElse () { }\n}\n\n//no-invalid-regex\nRegExp('[')\n\n// no-irregular-whitespace\n const o = 42;\n\n//no-obj-calls\nvar math = Math();\n\n// no-prototype-builtins\nvar hasBarProperty = foo.hasOwnProperty(\"bar\");\n\n//no-regex-spaces\nvar re = /foo   bar/;\n\n//no-sparse-arrays\nvar items = [,,];\n\n//no-template-curly-in-string\n\"Hello ${name}!\";\n\n//no-unexpected-multiline\nvar foo = bar\n(1 || 2).baz();\n\n//no-unreachable\nfunction fn() {\n    x = 1;\n    return x;\n    x = 3; // this will never execute\n}\n\n//no-unsafe-finally\n(() => {\n    try {\n        return 1; // 1 is returned but suspended until finally block ends\n    } catch(err) {\n        return 2;\n    } finally {\n        return 3; // 3 is returned before 1, which we did not expect\n    }\n})();\n\n//no-unsafe-negation\nif (!key in object) {\n    // operator precedence makes it equivalent to (!key) in object\n    // and type conversion makes it equivalent to (key ? \"false\" : \"true\") in object\n}\n\n//use-isnan\nif (foo == NaN) {\n    // ...\n}\n\n//valid-jsdoc\n/**\n * Add two numbers.\n * @param {number} num1 The first number.\n * @param {number} num2 The second number.\n * @returns {number} The sum of the two numbers.\n */\nfunction add(num1, num2) {\n    return num1 + num2;\n}\n\n//valid-typeof\ntypeof foo === \"strnig\""
+    },
+    {
+        "filePath": "/Users/nicolasharraudeau/sonarsource/sonarjs-eslint-reports/jscode/src/promise.js",
+        "messages": [
+            {
+                "ruleId": "promise/catch-or-return",
+                "severity": 2,
+                "message": "Expected catch() or return",
+                "line": 1,
+                "column": 1,
+                "nodeType": "ExpressionStatement",
+                "endLine": 1,
+                "endColumn": 25
+            },
+            {
+                "ruleId": "no-undef",
+                "severity": 2,
+                "message": "'myPromise' is not defined.",
+                "line": 1,
+                "column": 1,
+                "nodeType": "Identifier",
+                "endLine": 1,
+                "endColumn": 10
+            },
+            {
+                "ruleId": "promise/always-return",
+                "severity": 2,
+                "message": "Each then() should return a value or throw",
+                "line": 1,
+                "column": 16,
+                "nodeType": "ArrowFunctionExpression",
+                "endLine": 1,
+                "endColumn": 24
+            },
+            {
+                "ruleId": "no-empty-function",
+                "severity": 2,
+                "message": "Unexpected empty arrow function.",
+                "line": 1,
+                "column": 22,
+                "nodeType": "ArrowFunctionExpression",
+                "messageId": "unexpected"
+            },
+            {
+                "ruleId": "capitalized-comments",
+                "severity": 2,
+                "message": "Comments should not begin with a lowercase character",
+                "line": 1,
+                "column": 26,
+                "nodeType": null,
+                "messageId": "unexpectedLowercaseComment",
+                "endLine": 1,
+                "endColumn": 58,
+                "fix": {
+                    "range": [
+                        28,
+                        29
+                    ],
+                    "text": "P"
+                }
+            },
+            {
+                "ruleId": "line-comment-position",
+                "severity": 2,
+                "message": "Expected comment to be above code.",
+                "line": 1,
+                "column": 26,
+                "nodeType": "Line",
+                "endLine": 1,
+                "endColumn": 58
+            },
+            {
+                "ruleId": "no-inline-comments",
+                "severity": 2,
+                "message": "Unexpected comment inline with code.",
+                "line": 1,
+                "column": 26,
+                "nodeType": "Line",
+                "endLine": 1,
+                "endColumn": 58
+            }
+        ],
+        "errorCount": 7,
+        "warningCount": 0,
         "fixableErrorCount": 1,
         "fixableWarningCount": 0,
-        "source": "function a() {\na()\n}"
+        "source": "myPromise.then(() => {}) // promise/catch-or-return error"
+    },
+    {
+        "filePath": "/Users/nicolasharraudeau/sonarsource/sonarjs-eslint-reports/jscode/src/react.js",
+        "messages": [
+            {
+                "ruleId": "no-var",
+                "severity": 2,
+                "message": "Unexpected var, use let or const instead.",
+                "line": 1,
+                "column": 1,
+                "nodeType": "VariableDeclaration",
+                "endLine": 5,
+                "endColumn": 4,
+                "fix": {
+                    "range": [
+                        0,
+                        3
+                    ],
+                    "text": "let"
+                }
+            },
+            {
+                "ruleId": "no-unused-vars",
+                "severity": 2,
+                "message": "'Hello' is assigned a value but never used.",
+                "line": 1,
+                "column": 5,
+                "nodeType": "Identifier",
+                "endLine": 1,
+                "endColumn": 10
+            },
+            {
+                "ruleId": "no-undef",
+                "severity": 2,
+                "message": "'createReactClass' is not defined.",
+                "line": 1,
+                "column": 13,
+                "nodeType": "Identifier",
+                "endLine": 1,
+                "endColumn": 29
+            },
+            {
+                "ruleId": "quote-props",
+                "severity": 2,
+                "message": "Unquoted property 'render' found.",
+                "line": 2,
+                "column": 5,
+                "nodeType": "Property",
+                "endLine": 4,
+                "endColumn": 6,
+                "fix": {
+                    "range": [
+                        35,
+                        41
+                    ],
+                    "text": "\"render\""
+                }
+            },
+            {
+                "ruleId": "object-shorthand",
+                "severity": 2,
+                "message": "Expected method shorthand.",
+                "line": 2,
+                "column": 5,
+                "nodeType": "Property",
+                "endLine": 4,
+                "endColumn": 6,
+                "fix": {
+                    "range": [
+                        35,
+                        133
+                    ],
+                    "text": "render () {\n        return <div ref=\"hello\">Hello, world.</div>; // No-string-refs\n    }"
+                }
+            },
+            {
+                "ruleId": "func-names",
+                "severity": 2,
+                "message": "Unexpected unnamed method 'render'.",
+                "line": 2,
+                "column": 13,
+                "nodeType": "FunctionExpression",
+                "endLine": 4,
+                "endColumn": 6
+            },
+            {
+                "ruleId": "padded-blocks",
+                "severity": 2,
+                "message": "Block must be padded by blank lines.",
+                "line": 2,
+                "column": 25,
+                "nodeType": "BlockStatement",
+                "fix": {
+                    "range": [
+                        56,
+                        56
+                    ],
+                    "text": "\n"
+                }
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 3,
+                "column": 16,
+                "nodeType": "JSXOpeningElement",
+                "endLine": 3,
+                "endColumn": 33
+            },
+            {
+                "ruleId": "react/no-string-refs",
+                "severity": 2,
+                "message": "Using string literals in ref attributes is deprecated.",
+                "line": 3,
+                "column": 21,
+                "nodeType": "JSXAttribute",
+                "endLine": 3,
+                "endColumn": 32
+            },
+            {
+                "ruleId": "no-inline-comments",
+                "severity": 2,
+                "message": "Unexpected comment inline with code.",
+                "line": 3,
+                "column": 54,
+                "nodeType": "Line",
+                "endLine": 3,
+                "endColumn": 71
+            },
+            {
+                "ruleId": "line-comment-position",
+                "severity": 2,
+                "message": "Expected comment to be above code.",
+                "line": 3,
+                "column": 54,
+                "nodeType": "Line",
+                "endLine": 3,
+                "endColumn": 71
+            },
+            {
+                "ruleId": "padded-blocks",
+                "severity": 2,
+                "message": "Block must be padded by blank lines.",
+                "line": 4,
+                "column": 5,
+                "nodeType": "BlockStatement",
+                "fix": {
+                    "range": [
+                        132,
+                        132
+                    ],
+                    "text": "\n"
+                }
+            }
+        ],
+        "errorCount": 12,
+        "warningCount": 0,
+        "fixableErrorCount": 5,
+        "fixableWarningCount": 0,
+        "source": "var Hello = createReactClass({\n    render: function () {\n        return <div ref=\"hello\">Hello, world.</div>; // No-string-refs\n    }\n});"
+    },
+    {
+        "filePath": "/Users/nicolasharraudeau/sonarsource/sonarjs-eslint-reports/jscode/src/test.jsx",
+        "messages": [
+            {
+                "ruleId": "func-style",
+                "severity": 2,
+                "message": "Expected a function expression.",
+                "line": 3,
+                "column": 1,
+                "nodeType": "FunctionDeclaration",
+                "endLine": 5,
+                "endColumn": 2
+            },
+            {
+                "ruleId": "require-jsdoc",
+                "severity": 2,
+                "message": "Missing JSDoc comment.",
+                "line": 3,
+                "column": 1,
+                "nodeType": "FunctionDeclaration",
+                "endLine": 5,
+                "endColumn": 2
+            },
+            {
+                "ruleId": "no-unused-vars",
+                "severity": 2,
+                "message": "'Foo' is defined but never used.",
+                "line": 3,
+                "column": 10,
+                "nodeType": "Identifier",
+                "endLine": 3,
+                "endColumn": 13
+            },
+            {
+                "ruleId": "space-before-function-paren",
+                "severity": 2,
+                "message": "Missing space before function parentheses.",
+                "line": 3,
+                "column": 13,
+                "nodeType": "FunctionDeclaration",
+                "fix": {
+                    "range": [
+                        40,
+                        40
+                    ],
+                    "text": " "
+                }
+            },
+            {
+                "ruleId": "padded-blocks",
+                "severity": 2,
+                "message": "Block must be padded by blank lines.",
+                "line": 3,
+                "column": 21,
+                "nodeType": "BlockStatement",
+                "fix": {
+                    "range": [
+                        49,
+                        49
+                    ],
+                    "text": "\n"
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 4 spaces but found 2.",
+                "line": 4,
+                "column": 1,
+                "nodeType": "Keyword",
+                "endLine": 4,
+                "endColumn": 3,
+                "fix": {
+                    "range": [
+                        50,
+                        52
+                    ],
+                    "text": "    "
+                }
+            },
+            {
+                "ruleId": "indent-legacy",
+                "severity": 2,
+                "message": "Expected indentation of 4 spaces but found 2.",
+                "line": 4,
+                "column": 3,
+                "nodeType": "ReturnStatement",
+                "endLine": 4,
+                "endColumn": 28,
+                "fix": {
+                    "range": [
+                        50,
+                        52
+                    ],
+                    "text": "    "
+                }
+            },
+            {
+                "ruleId": "jsx-a11y/alt-text",
+                "severity": 2,
+                "message": "img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.",
+                "line": 4,
+                "column": 10,
+                "nodeType": "JSXOpeningElement",
+                "endLine": 4,
+                "endColumn": 28
+            },
+            {
+                "ruleId": "padded-blocks",
+                "severity": 2,
+                "message": "Block must be padded by blank lines.",
+                "line": 5,
+                "column": 1,
+                "nodeType": "BlockStatement",
+                "fix": {
+                    "range": [
+                        78,
+                        78
+                    ],
+                    "text": "\n"
+                }
+            }
+        ],
+        "errorCount": 9,
+        "warningCount": 0,
+        "fixableErrorCount": 5,
+        "fixableWarningCount": 0,
+        "source": "import React from 'react';\n\nfunction Foo(props) {\n  return <img {...props} />\n}"
+    },
+    {
+        "filePath": "/Users/nicolasharraudeau/sonarsource/sonarjs-eslint-reports/jscode/src/warnings.js",
+        "messages": [
+            {
+                "ruleId": "capitalized-comments",
+                "severity": 2,
+                "message": "Comments should not begin with a lowercase character",
+                "line": 1,
+                "column": 1,
+                "nodeType": null,
+                "messageId": "unexpectedLowercaseComment",
+                "endLine": 1,
+                "endColumn": 9,
+                "fix": {
+                    "range": [
+                        2,
+                        3
+                    ],
+                    "text": "I"
+                }
+            },
+            {
+                "ruleId": "spaced-comment",
+                "severity": 2,
+                "message": "Expected space or tab after '//' in comment.",
+                "line": 1,
+                "column": 1,
+                "nodeType": "Line",
+                "endLine": 1,
+                "endColumn": 9,
+                "fix": {
+                    "range": [
+                        2,
+                        2
+                    ],
+                    "text": " "
+                }
+            },
+            {
+                "ruleId": "func-style",
+                "severity": 2,
+                "message": "Expected a function expression.",
+                "line": 2,
+                "column": 1,
+                "nodeType": "FunctionDeclaration",
+                "endLine": 4,
+                "endColumn": 2
+            },
+            {
+                "ruleId": "require-jsdoc",
+                "severity": 2,
+                "message": "Missing JSDoc comment.",
+                "line": 2,
+                "column": 1,
+                "nodeType": "FunctionDeclaration",
+                "endLine": 4,
+                "endColumn": 2
+            },
+            {
+                "ruleId": "no-unused-vars",
+                "severity": 2,
+                "message": "'a' is defined but never used.",
+                "line": 2,
+                "column": 10,
+                "nodeType": "Identifier",
+                "endLine": 2,
+                "endColumn": 11
+            },
+            {
+                "ruleId": "id-length",
+                "severity": 2,
+                "message": "Identifier name 'a' is too short (< 2).",
+                "line": 2,
+                "column": 10,
+                "nodeType": "Identifier",
+                "endLine": 2,
+                "endColumn": 11
+            },
+            {
+                "ruleId": "space-before-function-paren",
+                "severity": 2,
+                "message": "Missing space before function parentheses.",
+                "line": 2,
+                "column": 11,
+                "nodeType": "FunctionDeclaration",
+                "fix": {
+                    "range": [
+                        19,
+                        19
+                    ],
+                    "text": " "
+                }
+            },
+            {
+                "ruleId": "padded-blocks",
+                "severity": 2,
+                "message": "Block must be padded by blank lines.",
+                "line": 2,
+                "column": 14,
+                "nodeType": "BlockStatement",
+                "fix": {
+                    "range": [
+                        23,
+                        23
+                    ],
+                    "text": "\n"
+                }
+            },
+            {
+                "ruleId": "indent-legacy",
+                "severity": 2,
+                "message": "Expected indentation of 4 spaces but found 0.",
+                "line": 3,
+                "column": 1,
+                "nodeType": "ExpressionStatement",
+                "endLine": 3,
+                "endColumn": 4,
+                "fix": {
+                    "range": [
+                        24,
+                        24
+                    ],
+                    "text": "    "
+                }
+            },
+            {
+                "ruleId": "indent",
+                "severity": 2,
+                "message": "Expected indentation of 4 spaces but found 0.",
+                "line": 3,
+                "column": 1,
+                "nodeType": "Identifier",
+                "endLine": 3,
+                "endColumn": 1,
+                "fix": {
+                    "range": [
+                        24,
+                        24
+                    ],
+                    "text": "    "
+                }
+            },
+            {
+                "ruleId": "padded-blocks",
+                "severity": 2,
+                "message": "Block must be padded by blank lines.",
+                "line": 4,
+                "column": 1,
+                "nodeType": "BlockStatement",
+                "fix": {
+                    "range": [
+                        28,
+                        28
+                    ],
+                    "text": "\n"
+                }
+            }
+        ],
+        "errorCount": 11,
+        "warningCount": 0,
+        "fixableErrorCount": 7,
+        "fixableWarningCount": 0,
+        "source": "//indent\nfunction a() {\na()\n}"
     }
 ]

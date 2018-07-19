@@ -4,11 +4,24 @@
   "main": "src/index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node src/index.js",
-    "eslint": "eslint -f json -o eslint_report.json ."
+    "eslint": "eslint -f json -o eslint_report.json --ext .vue,.js,.jsx ."
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.6",
+    "babel-preset-flow": "^6.23.0",
     "eslint": "^5.1.0",
-    "eslint-plugin-angular": "^3.3.0"
+    "eslint-plugin-angular": "^3.3.0",
+    "eslint-plugin-ember": "^5.2.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-react": "^7.10.0",
+    "eslint-plugin-vue": "^4.7.0",
+    "flow-bin": "^0.76.0"
+  },
+  "dependencies": {
+    "react": "^16.4.1"
   }
 }

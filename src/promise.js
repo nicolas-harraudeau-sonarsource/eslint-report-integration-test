@@ -1,0 +1,1 @@
+myPromise.then(() => {}) // promise/catch-or-return error
